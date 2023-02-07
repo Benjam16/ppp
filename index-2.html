@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from p3p3y00ts.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Sep 2022 23:59:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Donald Trump Yacht Club </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll intro" style="color:white;" href="#page-top">Donald Trump Yacht Club </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a target="_blank" href="https://opensea.io/collection/donald-trump-yacht-club">Opensea</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/Donaldtrumpyc">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://etherscan.io/address/0x3b1fbe997c2253cffa975c066fa3feec326337dd">Etherscan</a>
+            </li>
+            <li>
+              <button class="btn btn-default btn-lg" id="connectWallet" onclick="connect()">Connect</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+			  <img src="img/logo.png" class="img-rounded img-responsive center-block" style="width:50%; height:auto;"  alt="Responsive image"><br><br>
+			  <img id="preview" src="img/p3p3y00ts.gif" class="img-rounded img-responsive center-block" style="width:50%; height:auto;"  alt="Responsive image"><br><br>
+              <p class="intro-text">Help Us Make NFTs Great Again</p>
+			  <h2>Donald Trump Yacht Club</h2>
+			  <button type="button" onclick="connect()"  class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Mint DTYC!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="about" class="container text-center">
+
+<div class="container">
+
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="text-primary modal-title text-center">M I N T Details</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-primary text-center">2 Free per Wallet</p>
+          <p class="text-primary text-center"> 0.003 ETH After 2 Free / DTYC</p>
+          <p class="text-primary text-center" id="minted">10000 DTYC</p>
+		    <div class="center">
+			<div class="input-group mr-1">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="quant[1]" id="quantity" class="form-control input-number text-center" value="1" min="1" max="20">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div>
+	  <br>
+	  <div class=" text-center">
+	  <button onclick="mint()" id="mintButton"  class="btn btn-default btn-lg h-25">Mint DTYC!</button></div>
+		</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+		
+    </section>
+    <script type="application/javascript" src="js/ethers.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/grayscale.js"></script>
+    <script src="js/P3p3Y00ts.js"></script>
+  </body>
+
+</html>
