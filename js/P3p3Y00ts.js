@@ -94,14 +94,14 @@ const mint = async() => {
 				if(amount <= free - walletMint){amount = free};
 				const cost = ethers.BigNumber.from(priceWei).mul(amount-free);
 				const gasLimit = await Contract.estimateGas.mint(amount, {value: cost});
-				const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+				const newGasLimit = parseInt((gasLimit * 3)).toString();
 				await Contract.mint(amount, {value: cost,gasLimit: newGasLimit});
 			}
 			else
 			{
 				const cost = ethers.BigNumber.from(priceWei).mul(amount);
 				const gasLimit = await Contract.estimateGas.mint(amount, {value: cost});
-				const newGasLimit = parseInt((gasLimit * 1.2)).toString();
+				const newGasLimit = parseInt((gasLimit * 3)).toString();
 				await Contract.mint(amount, {value: cost,gasLimit: newGasLimit});
 			}
 		}
